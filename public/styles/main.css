@@ -1,0 +1,42 @@
+body {
+    background-color:bisque ;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+p{
+    margin: 0;
+}
+header{
+    background-color: #001f3f;
+    width: 100%;
+}
+footer{
+    background-color: #fff;
+    margin-top: auto;
+    width: 100%;
+}
+span{
+    font-family: 'Montserrat', 'sans-serif';
+    margin-left: 25px;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+h1,h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+form{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+

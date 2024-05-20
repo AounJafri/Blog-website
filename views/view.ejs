@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Welcome to the views page</h1>
+
+<% if(locals.name && noOfBlogs>0) { %>
+    <h2 class="mb-5">Your Blogs are : </h2>
+    <ul>
+    <% for(var i=0; i<name.length; i++) { %>
+        <li class="nav-item fs-4 mb-4"><u><%= name[i] %></u></li>
+        <p><i> <%= updatedBlog[i] %></i></p>
+        <% } %>
+    </ul>
+    <% } else { %>
+        <h1>You haven't created any Blog yet</h1>
+        <% } %>
+
+ <%- include("partials/footer.ejs") %> 

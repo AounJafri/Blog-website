@@ -1,0 +1,27 @@
+
+<%- include("partials/header.ejs") %>
+
+<% if(locals.name && noOfBlogs>0) { %>
+  <h1>Which blogs do you wanna delete?</h1>
+    <ul>
+        <% for(var i=0; i< noOfBlogs; i++) { %>
+            <li><%= name[i] %></li>
+            <% } %>
+
+            <form style="display: inline-block;" action="/delete" method="POST">
+              <h3 class="h3 mb-3 fw-normal">Enter Blog Name you wanna Delete</h3>
+          
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Name of Blog" name="blogname">
+                <label for="floatingInput">Enter Correct Name</label>
+              </div>
+              <button class="btn btn-primary w-100 py-2" type="submit" value="Create">Delete</button>
+            </form>
+
+            <% } else { %>
+              <h1>You currently dont have any blogs.</h1>
+              <% } %>
+    </ul>
+
+
+<%- include("partials/footer.ejs") %>
